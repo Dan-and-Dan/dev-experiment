@@ -58,3 +58,10 @@ footer {
     color: white;
     background-color: black;
 }
+
+.subhead{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 36px;
+    font-style: italic;
+}

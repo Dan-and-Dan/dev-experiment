@@ -26,8 +26,13 @@
     color: red;
 }
 
-.someText {
-    height: 300px;
+.someTextHome .inner{
+    margin: 10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+}
+.someTextHome .subhead{
+    margin-top: 20px;
 }
 
 .logoContainer {
