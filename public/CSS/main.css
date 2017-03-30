@@ -17,7 +17,6 @@ html {
 nav {
     padding: 0px;
     background-color: white;
-    z-index: 1000;
     height: 75px;
 }
 
@@ -64,4 +63,38 @@ footer {
     font-family: 'Libre Baskerville', serif;
     font-size: 36px;
     font-style: italic;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.navbar-right i {
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.navItems{
+}
+
+.navbar-right a{
+    color: black;
+}
+
+i:hover{
+    color: red;
+}
+nav button{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        margin-top: 20px;
+    }
+    .navbar-right {
+        margin-right: 70px;
+        margin-bottom: 15px;
+    }
 }
