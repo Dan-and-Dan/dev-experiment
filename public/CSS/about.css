@@ -13,6 +13,106 @@
     padding-top: 75px;
 }
 
-.someText {
-    height: 300px;
+.aboutDivContainer h1 {
+    margin-top: 10px;
+    font-family: Spartan;
+    text-align: center;
+}
+
+.wwd-container {
+    color: white;
+    text-align: center;
+}
+
+.design {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    opacity: .8;
+}
+
+.design ul {
+    list-style: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+}
+
+.design h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+.development {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    opacity: .8;
+}
+
+.development ul {
+    list-style: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+}
+
+.development h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+.marketing {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    opacity: .8;
+}
+
+.marketing ul {
+    list-style: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+}
+
+.marketing h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+
+/* White Part */
+
+.headshotsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.captionsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+}
+
+.headshot {
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+}
+
+.Pak .subhead {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.Bolognino .subhead {
+    margin-top: 10px;
+    font-size: 24px;
 }

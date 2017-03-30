@@ -65,12 +65,12 @@ footer {
     font-style: italic;
 }
 
-.navbar-right{
+.footer-right{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
-.navbar-right i {
+.footer-right i {
     margin-right: 10px;
     font-size: 40px;
 }
@@ -78,7 +78,7 @@ footer {
 .navItems{
 }
 
-.navbar-right a{
+.footer-right a{
     color: black;
 }
 
