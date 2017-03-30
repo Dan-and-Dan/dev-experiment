@@ -1,0 +1,19 @@
+.homeDiv {
+    text-align: center;
+    z-index: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background-image: url("../images/nyc-background-1");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeDivContainer {
+    padding-top: 75px;
+}
+
+.someText {
+    height: 300px;
+}
