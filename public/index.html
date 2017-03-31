@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="devShop">
+<html lang="en" ng-app="devShop"> <!-- is this an angular app ?--> 
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
 
 </head>
 
-<body ng-controller="mainController" data-spy="scroll">
+<body ng-controller="mainController" data-spy="scroll" data-target="#navbar-section">
     <nav class="navbar navbar-toggleable-sm fixed-top navbar-light">
         <button class="navbar-toggler-right navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,24 +32,24 @@
         <a class="navbar-brand" href="#">Midtown Dev Shop</a>
         <div class="collapse navbar-collapse itemsInNav" id="navbarToggle">
             <div class="navDiv">
-                <ul class="navbar-nav mt-2 mt-lg-0">
+                <ul class="nav navbar-nav mt-2 mt-lg-0" id='navbar-section'>
                     <li class="nav-item">
-                        <a class="nav-link" href="#/Home">Home</a>
+                        <a class="nav-link" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#/About">About Us</a>
+                        <a class="nav-link" href="#About">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#/Work">Work</a>
+                        <a class="nav-link" href="#Work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#/Contact">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="homeDiv" id='/Home'>
+    <div class="homeDiv" id='Home'>
         <div class="homeDivContainer">
             <div class="logoContainer">
                 <img src="images/MidtownLogo.png">
@@ -71,7 +71,7 @@
 
 
     <div class="aboutDiv">
-        <div class="aboutDivContainer" id='/About'>
+        <div class="aboutDivContainer" id='About'>
             <h1 class="heading">WHAT WE DO</h1>
             <div class="wwd-container">
                 <div class="design">
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="workDiv" id='/Work'>
+    <div class="workDiv" id='Work'>
         <div class="workDivContainer">
             <h1 class="heading workhead">OUR WORK</h1>
         </div>
@@ -143,7 +143,7 @@
             <p>Our team members work in a very efficient manner.  We hire only the best and seek out those with very particular skillsets.  This allows us to produce high quality products that not only look just as you want them to, but also have great performance..</p>
             <br>
         </div></div>
-    <div class="contactDiv" id='/Contact'>
+    <div class="contactDiv" id='Contact'>
         <div class="contactContent">
             <div class="contactDivContainer">
                 <h1 class="heading contacthead">CONTACT</h1>
@@ -197,5 +197,6 @@
 <!--- Map --->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL8PdLCBb2dZfdPs73V1mljLCjXBxzL7o&callback=initMap" async defer></script>
 <script src="map/map.js" type="text/javascript"></script>
+<script src='app.js'></script>
 
 </html>
