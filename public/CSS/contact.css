@@ -10,5 +10,19 @@
 }
 
 .contactDivContainer {
+    height: 70vh;
     padding-top: 75px;
+}
+
+.contacthead {
+    text-align: center;
+}
+
+.mapDivContainer {
+    height: 40vh;
+}
+
+#map {
+    height: 40vh;
+    width: 100%;
 }

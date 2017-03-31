@@ -3,7 +3,6 @@
     src: url("../fonts/LeagueSpartan-Bold.otf") format("opentype");
 }
 
-
 body,
 html {
     height: 100%;
@@ -58,7 +57,7 @@ footer {
     background-color: black;
 }
 
-.subhead{
+.subhead {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 36px;
@@ -69,23 +68,30 @@ footer {
     margin-right: 10px;
     font-size: 40px;
 }
-.icons i{
+
+.icons i {
     color: white;
 }
 
-i:hover{
+i:hover {
     color: red;
 }
-nav button{
+
+nav button {
     margin-top: 20px;
 }
 
 @media screen and (max-width: 767px) {
-    .navbar-brand{
+    .navbar-brand {
         margin-top: 20px;
     }
     .navbar-right {
         margin-right: 70px;
         margin-bottom: 15px;
     }
+}
+
+.heading {
+    font-family: Spartan;
+    font-size: 60px;
 }
