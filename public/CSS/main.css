@@ -51,7 +51,7 @@ footer {
 .footContainer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 75px;
     text-align: right;
     color: white;
@@ -65,21 +65,12 @@ footer {
     font-style: italic;
 }
 
-.footer-right{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-.footer-right i {
+.icons i {
     margin-right: 10px;
     font-size: 40px;
 }
-
-.navItems{
-}
-
-.footer-right a{
-    color: black;
+.icons i{
+    color: white;
 }
 
 i:hover{
