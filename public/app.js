@@ -6,6 +6,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         console.log("i'm scrolling!");
         //make navbar thin here
+        $("nav").addClass("navbarOnScroll");
     });
 
     $.fn.scrollEnd = function (callback, timeout) {
@@ -13,6 +14,7 @@ $(document).ready(function () {
             var $this = $(this);
             if ($this.data('scrollTimeout')) {
                 clearTimeout($this.data('scrollTimeout'));
+                $("nav").removeClass("navbarOnScroll");
             }
             $this.data('scrollTimeout', setTimeout(callback, timeout));
         });
