@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="devShop"> <!-- is this an angular app ?--> 
+<html lang="en">
+<!-- is this an angular app ?-->
 
 <head>
     <meta charset="UTF-8">
@@ -138,11 +139,13 @@
             <h1 class="heading workhead">OUR WORK</h1>
         </div>
     </div>
-    <div class="workText"><h1 class="subhead">Efficiency, Quality, and Performance</h1>
+    <div class="workText">
+        <h1 class="subhead">Efficiency, Quality, and Performance</h1>
         <div class="innerWork text-center">
-            <p>Our team members work in a very efficient manner.  We hire only the best and seek out those with very particular skillsets.  This allows us to produce high quality products that not only look just as you want them to, but also have great performance..</p>
+            <p>Our team members work in a very efficient manner. We hire only the best and seek out those with very particular skillsets. This allows us to produce high quality products that not only look just as you want them to, but also have great performance..</p>
             <br>
-        </div></div>
+        </div>
+    </div>
     <div class="contactDiv" id='Contact'>
         <div class="contactContent">
             <div class="contactDivContainer">
@@ -161,15 +164,17 @@
                     <label for="number">Phone:</label>
                     <input type="text" class="form-control" id="number">
                 </div>
+<!--
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="text" class="form-control" id="email">
                 </div>
+-->
                 <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <label for="comment">Message:</label>
+                    <textarea class="form-control" rows="5" id="message"></textarea>
                 </div>
-                <button class="btn emailButton">Shoot Us an Email</button>
+                <button class="btn emailButton" id="sendEmailButton">Shoot Us an Email</button>
             </div>
         </div>
         <div class="mapDivContainer">
@@ -181,11 +186,36 @@
             <div>© Midtown Dev Shop, LLC</div>
             <div class="icons">
                 <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MidtownDevShop"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
+    
+    <!-- modal for email--> 
+<!--
+    <div class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+
 </body>
 
 

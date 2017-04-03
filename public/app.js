@@ -1,6 +1,3 @@
-//angular.module("devShop", [])
-//.controller("mainController", ["$scope", function($scope){
-//}]);
 $(document).ready(function () {
     $('body').scrollspy({
         target: '#navbar-section'
@@ -25,5 +22,16 @@ $(document).ready(function () {
     $(window).scrollEnd(function () {
         //add class back to here
     }, 1000);
+    
+    $('#sendEmailButton').on('click', function() {
+        var mailObj = {}; 
+        mailObj.name = $('#name').val(); 
+        mailObj.number = $('#number').val(); 
+        mailObj.message = $('#message').val(); 
+        
+        console.log(mailObj);
+        
+        window.open("mailto:"+"danielbolognino@midtowndev.io"+'?cc='+"danielpak@midtowndev.io"+'&subject='+mailObj.name + " " + mailObj.number +'&body='+mailObj.message)
+    })
 
 })
