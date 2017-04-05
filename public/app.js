@@ -1,6 +1,3 @@
-//angular.module("devShop", [])
-//.controller("mainController", ["$scope", function($scope){
-//}]);
 $(document).ready(function () {
     $('body').scrollspy({
         target: '#navbar-section'

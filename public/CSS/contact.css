@@ -2,7 +2,7 @@
     z-index: 0;
     min-height: 100%;
     min-width: 100%;
-    background-image: url("../images/bulbs.jpg");
+    background-image: url("../images/jakob-owens-212555.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,14 +31,19 @@
 
 .contacthead {
     text-align: center;
+
+}
+
+.white {
+    color: white;
 }
 
 .emailButton {
     font-weight: bold;
     letter-spacing: 4px;
     background: none;
-    color: black;
-    border: black 2px solid;
+    color: white;
+    border: white 2px solid;
     margin-bottom: 20px;
 }
 

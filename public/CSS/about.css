@@ -2,7 +2,7 @@
     z-index: 0;
     min-height: 100%;
     min-width: 100%;
-    background-image: url("../images/lights.jpg");
+    background-image: url("../images/jakob-owens-205642.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,39 +88,6 @@
 }
 
 
-/* White Part */
-
-.headshotsContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.captionsContainer {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    text-align: center;
-}
-
-.headshot {
-    border-radius: 50%;
-    height: 175px;
-    width: 175px;
-}
-
-.Pak .subhead {
-    margin-top: 10px;
-    font-size: 24px;
-}
-
-.Bolognino .subhead {
-    margin-top: 10px;
-    font-size: 24px;
-}
-
-.team {
-    padding-top: 20px;
-    text-align: center;
+.aboutHeading {
+    color: white;
 }
