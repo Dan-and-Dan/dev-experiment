@@ -4,9 +4,28 @@
     min-width: 100%;
     background-image: url("../images/nyc-background-1.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media only screen  and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .homeDiv{
+      background-image: url("../images/nycmobile.jpg");
+    }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .homeDiv {
+        background-image: url("../images/nycmobile.jpg");
+    }
 }
 
 .homeDivContainer {
@@ -26,12 +45,13 @@
     color: red;
 }
 
-.someTextHome .inner{
+.someTextHome .inner {
     margin: 10px;
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
 }
-.someTextHome .subhead{
+
+.someTextHome .subhead {
     margin-top: 20px;
 }
 
@@ -58,7 +78,7 @@
     .logoContainer {
         margin-top: 100px;
     }
-        .logoContainer h1{
+    .logoContainer h1 {
         font-size: 45px;
     }
 }
@@ -67,7 +87,7 @@
     .logoContainer {
         margin-top: 95px;
     }
-    .logoContainer h1{
+    .logoContainer h1 {
         font-size: 45px;
     }
 }
@@ -76,7 +96,7 @@
     .logoContainer {
         margin-top: 90px;
     }
-        .logoContainer h1{
+    .logoContainer h1 {
         font-size: 50px;
     }
 }
