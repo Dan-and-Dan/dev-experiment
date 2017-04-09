@@ -14,25 +14,6 @@
     padding-bottom: 50px;
 }
 
-@media only screen  and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    .aboutDiv{
-      background-image: url("../images/lightsmobile.jpg");
-    }
-
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    .aboutDiv {
-        background-image: url("../images/lightsmobile.jpg");
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .aboutDiv {
-        background-attachment: scroll;
-    }
-}
-
 .aboutDivContainer {
     padding-top: 75px;
 }
@@ -117,21 +98,44 @@
 .headshotsContainer {
     display: flex;
     justify-content: space-around;
+    align-content: center;
     align-items: center;
     padding-top: 20px;
-}
-
-.captionsContainer {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    text-align: center;
 }
 
 .headshot {
     border-radius: 50%;
     height: 175px;
     width: 175px;
+}
+
+.headshotDBcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.headshotDPcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.hsContain {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.Pak {
+    text-align: center;
+}
+
+.Bolognino {
+    text-align: center;
 }
 
 .Pak .subhead {
@@ -147,4 +151,77 @@
 .team {
     padding-top: 20px;
     text-align: center;
+}
+
+
+/* Mobile Media Queries */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .aboutDiv {
+        background-image: url("../images/lightsmobile.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .aboutDiv {
+        background-image: url("../images/lightsmobile.jpg");
+    }
+}
+
+@media screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2) {
+    .aboutDiv {
+        background-image: url("../images/lightsmobile.jpg");
+    }
+    .aboutDiv {
+        background-attachment: scroll;
+    }
+    .aboutDivContainer h1 {
+        font-size: 100px;
+    }
+    .design {}
+    .design ul {
+        font-size: 28px;
+    }
+    .design h3 {
+        font-size: 42px;
+    }
+    .development {}
+    .development ul {
+        list-style: none;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 28px;
+    }
+    .development h3 {
+        font-size: 42px;
+    }
+    .marketing {}
+    .marketing ul {
+        font-size: 28px;
+    }
+    .marketing h3 {
+        font-size: 42px;
+    }
+    /* White Part */
+    .headshotsContainer {
+        padding-top: 50px;
+    }
+    .headshot {
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+    }
+    .Pak .subhead {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+    .Bolognino .subhead {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+    .jobTitle {
+        font-size: 32px;
+    }
+    .teamText h1 {
+        font-size: 56px !important;
+    }
 }

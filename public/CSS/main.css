@@ -101,3 +101,12 @@ nav button {
     margin-bottom: 0px; 
     color: aqua;
 }
+
+@media screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2) {
+    .subhead {
+        font-size: 56px !important;
+    }
+    .meetTheTeam {
+        font-size: 56px !important;
+    }
+}

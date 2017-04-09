@@ -13,27 +13,6 @@
     -o-background-size: cover;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    .contactDiv {
-        background-image: url("../images/bulbsmobile.jpg");
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    .contactDiv {
-        background-image: url("../images/bulbsmobile.jpg");
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .contactDiv {
-        background-attachment: scroll;
-    }
-    #map {
-        height: 25vh;
-    }
-}
-
 .contactDivContainer {
     text-align: center;
     text-align: center;
@@ -82,6 +61,49 @@
 }
 
 #map {
-    height: 40vh;
+    height: 37vh;
     width: 100%;
+}
+
+
+/* Mobile Queries */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .contactDiv {
+        background-image: url("../images/bulbsmobile.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .contactDiv {
+        background-image: url("../images/bulbsmobile.jpg");
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactDiv {
+        background-image: url("../images/bulbsmobile.jpg");
+    }
+    .contactDiv {
+        background-attachment: scroll;
+    }
+    #map {
+        height: 22vh;
+    }
+    .formContainer div {
+        font-size: 42px;
+    }
+    .mapDivContainer {
+        height: 20vh;
+    }
+    .emailButton {
+        font-size: 26px;
+    }
+    .contactInfo h3 {
+        font-size: 42px;
+        color: black;
+    }
+    .contacthead {
+        font-size: 100px;
+    }
 }

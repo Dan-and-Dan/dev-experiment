@@ -117,6 +117,9 @@
 
 @media screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2) {
     .homeDiv {
+        background-image: url("../images/nycmobile.jpg");
+    }
+    .homeDiv {
         background-attachment: scroll;
     }
     .homeDivContainer {
@@ -132,5 +135,14 @@
     .logoContainer h1 {
         margin: 20px;
         font-size: 100px;
+    }
+    .someTextHome .inner {
+        margin: 30px;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 32px;
+    }
+    .someTextHome .subhead {
+        margin-top: 25px;
+        font-size: 56px;
     }
 }

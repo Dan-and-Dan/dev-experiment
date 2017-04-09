@@ -15,24 +15,6 @@
     -o-background-size: cover;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    .workDiv {
-        background-image: url("../images/techmobile.jpg");
-    }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    .workDiv {
-        background-image: url("../images/techmobile.jpg");
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .workDiv {
-        background-attachment: scroll;
-    }
-}
-
 .workDivContainer {
     padding-top: 75px;
 }
@@ -46,4 +28,34 @@
     margin: 10px;
     font-family: 'Libre Baskerville', serif;
     font-size: 14px;
+}
+
+
+/* Media queries for mobile */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .workDiv {
+        background-image: url("../images/techmobile.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .workDiv {
+        background-image: url("../images/techmobile.jpg");
+    }
+}
+
+@media screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 2) {
+    .workDiv {
+        background-image: url("../images/techmobile.jpg");
+    }
+    .workDiv {
+        background-attachment: scroll;
+    }
+    .workhead {
+        font-size: 100px;
+    }
+    .innerWork {
+        font-size: 32px;
+    }
 }
