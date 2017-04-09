@@ -1,7 +1,7 @@
 .homeDiv {
     z-index: 0;
     min-height: 100%;
-    min-width: 100%;
+    width: 100%;
     background-image: url("../images/nyc-background-1.jpg");
     background-attachment: fixed;
     background-position: center center;
@@ -13,19 +13,6 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-}
-
-@media only screen  and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-    .homeDiv{
-      background-image: url("../images/nycmobile.jpg");
-    }
-
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-    .homeDiv {
-        background-image: url("../images/nycmobile.jpg");
-    }
 }
 
 .homeDivContainer {
@@ -110,5 +97,40 @@
 @media screen and (min-width: 750px) {
     .logoContainer {
         margin-top: 80px;
+    }
+}
+
+
+/*MOBILE MEDIA QUERIES*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .homeDiv {
+        background-image: url("../images/nycmobile.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .homeDiv {
+        background-image: url("../images/nycmobile.jpg");
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .homeDiv {
+        background-attachment: scroll;
+    }
+    .homeDivContainer {
+        padding-top: 30%;
+    }
+    .logoContainer {
+        margin-top: 20%;
+    }
+    .logoContainer img {
+        transform: scale(1.5);
+        margin-bottom: 75px;
+    }
+    .logoContainer h1 {
+        margin: 20px;
+        font-size: 100px;
     }
 }

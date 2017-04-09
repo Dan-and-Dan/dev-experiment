@@ -1,7 +1,5 @@
 .aboutDiv {
     z-index: 0;
-    min-height: 100%;
-    min-width: 100%;
     background-image: url("../images/lights.jpg");
     background-attachment: fixed;
     background-position: center center;
@@ -13,6 +11,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    padding-bottom: 50px;
 }
 
 @media only screen  and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -24,7 +23,13 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .aboutDiv {
-        background-image: url("../images/bulbsmobile.jpg");
+        background-image: url("../images/lightsmobile.jpg");
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aboutDiv {
+        background-attachment: scroll;
     }
 }
 
