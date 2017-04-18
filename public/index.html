@@ -1,9 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="en" ng-app="ShanePortfolioApp">
 
 <head>
+    <!---- meta data ---->
     <meta charset="UTF-8">
+
     <title>Shane Nepvue</title>
+
+    <meta name="description" content="Midtown Dev Shop produces high quality, clean, and sophisticated web and mobile applications.  No matter how complicated the build, we're up to the challenge!">
+    <meta property="og:description" content="Midtown Dev Shop produces high quality, clean, and sophisticated web and mobile applications.  No matter how complicated the build, we're up to the challenge!">
+    <meta name="copyright" content="Midtown Dev Shop, LLC">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="javascript, html, web, development, software, engineering, build, create, angular, mobile, android, ios, marketing, social, media, outreach, website, nyc, new, york">
+    <meta property="og:site_name" content="Midtown Dev Shop">
+    <meta property="og:title" content="Midtown Dev Shop">
+    <meta property="og:image" content="./images/MidtownLogo.png">
+    <meta property="og:url" content="http://midtowndev.io/">
+    <meta property="og:type" content="website">
+    <meta property="image" content="./images/MidtownLogo.png">
+    <title>Midtown Dev Shop</title>
 
     <!---- Bootstrap 4.0 ---->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -20,15 +36,15 @@
     <!---- font-family: 'Libre Baskerville', serif --->
 
     <!---- Icons --->
-    <script src="https://use.fontawesome.com/20bb1d4e17.js"></script>
+    <script src="https://use.fontawesome.com/6c295c78cb.js"></script>
 
 
 </head>
 
-<body>
 
     <!-- turn this into a directive -->
-    <nav class="navbar navbar-toggleable-sm fixed-top navbar-light">
+<body data-spy="scroll" data-target="#navbar-section">
+    <nav class="navbar navba-collapse collapse navbar-toggleable-sm fixed-top navbar-light">
         <button class="navbar-toggler-right navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,7 +71,7 @@
     <ng-view>
         
     </ng-view>
-    <!-- Footer -->
+
     <footer>
         <div class="footContainer container-fluid fixed-bottom">
             <div class='credits'>Created by <a href="midtowndev.io">Midtown Dev Shop</a></div>
@@ -68,6 +84,8 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 
 
@@ -81,5 +99,5 @@
 <script src="contact/contact.js"></script>
 <script src='about/about.js'></script>
 <script src='portfolio/portfolio.js'></script>
-
+<script src='home/home.js'></script>
 </html>
