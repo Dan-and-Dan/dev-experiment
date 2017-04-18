@@ -1,97 +1,11 @@
-@font-face {
-    font-family: Spartan;
-    src: url("../fonts/LeagueSpartan-Bold.otf") format("opentype");
+.footContainer { 
+    display: inline; 
 }
 
-body,
-html {
-    height: 100%;
-    position: relative;
+.icons { 
+    float: right;
 }
 
-.navbar-toggler-icon {
-    color: black;
-}
-
-nav {
-    padding: 0px;
-    background-color: white;
-    height: 75px;
-}
-
-.navbar,
-.fixed-top {
-    padding: 0px;
-}
-
-.navDiv {
-    font-size: 20px;
-}
-
-.nav-link:hover {
-    color: red !important;
-}
-
-.nav-link:focus {
-    color: red !important;
-}
-
-.itemsInNav {
-    background-color: white;
-    margin: none;
-}
-
-footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-}
-
-.footContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 75px;
-    text-align: right;
-    color: white;
-    background-color: black;
-}
-
-.subhead {
-    text-align: center;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 36px;
-    font-style: italic;
-}
-
-.icons i {
-    margin-right: 10px;
-    font-size: 40px;
-}
-
-.icons i {
-    color: white;
-}
-
-i:hover {
-    color: red;
-}
-
-nav button {
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 767px) {
-    .navbar-brand {
-        margin-top: 20px;
-    }
-    .navbar-right {
-        margin-right: 70px;
-        margin-bottom: 15px;
-    }
-}
-
-.heading {
-    font-family: Spartan;
-    font-size: 60px;
+.credits { 
+    float: left;
 }

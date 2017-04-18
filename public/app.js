@@ -1,26 +1,24 @@
-$(document).ready(function () {
-    $('body').scrollspy({
-        target: '#navbar-section'
-    });
+angular.module("ShanePortfolioApp", ['ngRoute'])
 
-    $(window).scroll(function () {
-        console.log("i'm scrolling!");
-        //make navbar thin here
-    });
-
-    $.fn.scrollEnd = function (callback, timeout) {
-        $(this).scroll(function () {
-            var $this = $(this);
-            if ($this.data('scrollTimeout')) {
-                clearTimeout($this.data('scrollTimeout'));
-            }
-            $this.data('scrollTimeout', setTimeout(callback, timeout));
-        });
-    };
-
-    // how to call it (with a 1000ms timeout):
-    $(window).scrollEnd(function () {
-        //add class back to here
-    }, 1000);
-
-})
+    .config(["$routeProvider", function ($routeProvider) {
+        $routeProvider
+            .when('/home', {
+                controller: "HomeController",
+                templateUrl: 'home/home.html'
+            })
+            .when('/about', {
+                controller: "AboutController",
+                templateUrl: 'about/about.html'
+            })
+            .when('/portfolio', {
+                controller: "PortfolioController",
+                templateUrl: "portfolio/portfolio.html"
+            })
+            .when('/contact', {
+                controller: "ContactController",
+                templateUrl: "contact/contact.html"
+            })
+            .otherwise({
+                redirectTo: "/home"
+            })
+}])

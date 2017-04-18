@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- is this an angular app ?-->
+<html lang="en" ng-app="ShanePortfolioApp">
 
 <head>
     <meta charset="UTF-8">
     <title>Shane Nepvue</title>
 
     <!---- Bootstrap 4.0 ---->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!---- CSS ---->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
@@ -23,136 +22,64 @@
     <!---- Icons --->
     <script src="https://use.fontawesome.com/20bb1d4e17.js"></script>
 
+
 </head>
 
-<body ng-controller="mainController" data-spy="scroll" data-target="#navbar-section">
-<nav class="navbar navbar-toggleable-sm fixed-top navbar-light">
-    <button class="navbar-toggler-right navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-            aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+
+    <!-- turn this into a directive -->
+    <nav class="navbar navbar-toggleable-sm fixed-top navbar-light">
+        <button class="navbar-toggler-right navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse itemsInNav pull-left" id="navbarToggle">
-        <div class="navDiv">
-            <ul class="nav navbar-nav mt-2 mt-lg-0" id='navbar-section'>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#About">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Contact">Contact</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse pull-left" id="navbarToggle">
+            <div class="navDiv">
+                <ul class="nav navbar-nav mt-2 mt-lg-0" id='navbar-section'>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<div class="homeDiv" id='Home'>
-    <div class="homeDivContainer">
-        <div class="logoContainer">
-            <img src="images/SHANE%20FLT%204726%20NAME.jpg">
-            <h1>Shane Nepvue</h1>
-        </div>
-    </div>
-</div>
+    </nav>
 
-
-<!-- about me -->
-<div class="aboutDiv" id='About'>
-    <div class="aboutDivContainer">
-        <h1 class="heading aboutHeading">About Me</h1>
-        <div class="wwd-container">
-            <div class="design">
-                <h3>Background</h3>
-            </div>
-            <hr>
-            <div class="design">
-                <h3>Resume</h3>
-                <br/>
-                <button class="btn"> Download </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="workDiv" id='Portfolio'>
-    <div class="workDivContainer">
-        <h1 class="heading workhead center-align">My Portfolio</h1>
-        <div class="text-center">
-        <h3>Photos</h3>
-            <div class="row">
-                <div class="col-sm-6">
-                    <img class='img-responsive' src="./images/SHANE%20FLT%209178%20NAME.jpg" alt="">
-                </div>
-                <div class="col-sm-6">
-                    <img class='img-responsive' src="./images/SHANE%20FLT%209372%20NAME%20.jpg" alt="">
-                </div>
-            </div>
-        <h3>Reels</h3>
-        <video width="640" height="480" controls>
-            <source src="images/reel%20footage-1.mp4" type="video/mp4">
-        </video>
-        </div>
-    </div>
-</div>
-
-<!-- contact -->
-<div class="contactDiv" id='Contact'>
-    <div class="contactContent">
-        <div class="contactDivContainer">
-            <h1 class="heading contacthead white">CONTACT</h1>
-            <div class="contactInfo white">
-                <h3>Email: ____@____.com</h3>
-                <h3>Phone xxx-xxx-xxxx</h3>
+    <ng-view>
+        
+    </ng-view>
+    <!-- Footer -->
+    <footer>
+        <div class="footContainer container-fluid fixed-bottom">
+            <div class='credits'>Created by <a href="midtowndev.io">Midtown Dev Shop</a></div>
+            <!-- media icons -->
+            <div class="icons">
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/MidtownDevShop"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="http://www.imdb.com/name/nm5314753/"><i class="fa fa-imdb" aria-hidden="true"></i></a>
             </div>
         </div>
-        <div class="formContainer">
-            <div class="form-group" align="center">
-                <label class='white' for="name">Name:</label>
-                <input type="text" class="form-control" id="name">
-            </div>
-            <div class="form-group">
-                <label class='white' for="number">Phone:</label>
-                <input type="text" class="form-control" id="number">
-            </div>
-            <div class="form-group">
-                <label class='white' for="email">Email:</label>
-                <input type="text" class="form-control" id="email">
-            </div>
-            <div class="form-group">
-                <label class='white' for="comment">Comment:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-            </div>
-            <button class="btn emailButton">Shoot Me an Email</button>
-        </div>
-    </div>
-</div>
-<!-- Footer -->
-<footer>
-    <div class="footContainer">
-        <div>Created by <a href="danielkpak.com">Daniel Pak</a></div>
-        <!-- media icons -->
-        <div class="icons">
-            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/MidtownDevShop"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-            <a href="http://www.imdb.com/name/nm5314753/"><i class="fa fa-imdb" aria-hidden="true"></i></a>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 
 <!---- Third Parties ---->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src='app.js'></script>
+<script src="contact/contact.js"></script>
+<script src='about/about.js'></script>
+<script src='portfolio/portfolio.js'></script>
+
 </html>
