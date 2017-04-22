@@ -16,6 +16,7 @@
 }
 
 .homeDivContainer {
+    height: 100%;
     padding-top: 75px;
 }
 
@@ -46,6 +47,7 @@
 }
 
 .logoContainer {
+    height: 100%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -65,43 +67,23 @@
 }
 
 @media screen and (max-width: 480px) {
-    .logoContainer {
-        margin-top: 100px;
-    }
     .logoContainer h1 {
         font-size: 45px;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 550px) {
-    .logoContainer {
-        margin-top: 95px;
-    }
     .logoContainer h1 {
         font-size: 45px;
     }
 }
 
 @media screen and (min-width: 550px) and (max-width: 650px) {
-    .logoContainer {
-        margin-top: 90px;
-    }
     .logoContainer h1 {
         font-size: 50px;
     }
 }
 
-@media screen and (min-width: 650px) and (max-width: 750px) {
-    .logoContainer {
-        margin-top: 85px;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    .logoContainer {
-        margin-top: 80px;
-    }
-}
 
 
 /*MOBILE MEDIA QUERIES*/
